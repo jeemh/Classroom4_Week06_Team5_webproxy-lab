@@ -10,6 +10,6 @@ static const char *user_agent_hdr =
     "Firefox/10.0.3\r\n";
 
 int main() {
-  printf("%s", user_agent_hdr);
+  printf("sdfsdfs%s", user_agent_hdr);
   return 0;
 }
