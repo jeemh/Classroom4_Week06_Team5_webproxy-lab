@@ -15,6 +15,7 @@ int main(int argc, char **argv)
   }
 
   listenfd = Open_listenfd(argv[1]); // 주어진 포트 번호로 리스닝 소켓을 열어서 파일 디스크립터를 얻음
+  printf("1");
   while (1) { // 무한 루프
     clientlen = sizeof(struct sockaddr_storage); // 클라이언트의 주소 길이를 초기화
     connfd = Accept(listenfd, (SA *)&clientaddr, &clientlen); // 클라이언트의 연결을 받아들이고, 연결된 클라이언트 소켓의 파일 디스크립터를 얻음
