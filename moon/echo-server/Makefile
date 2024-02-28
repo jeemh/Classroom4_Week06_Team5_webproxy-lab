@@ -23,4 +23,3 @@ echo.o: echo.c
 clean:
 	rm -f *.o
 	rm -f $(TARGET)
-
